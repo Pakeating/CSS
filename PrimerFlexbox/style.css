@@ -1,0 +1,40 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: black;
+}
+.container{
+    background: #202020;
+    display: flex;  /* aplica flexbox a la caja padre e hijas */
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;   /*adapta el tamano del container al tama;ano de pantalla */
+    flex-wrap: wrap; /*crea un wrap que provoca que si no caben en la pantalla se reajusten a otra posicion*/   
+    gap: 20px;
+}
+.uno{
+    background: #F13929;
+    width:200px;
+    height:200px;
+    border-radius: 15px;
+}
+.dos{
+    background: #7250FF;
+    width:200px;
+    height:200px;
+    border-radius: 15px;
+}
+.tres{
+    background: #01D0FB;
+    width:200px;
+    height:200px;
+    border-radius: 15px;
+}
+.cuatro{
+    background: #01D000;
+    width:200px;
+    height:200px;
+    border-radius: 15px;
+}
