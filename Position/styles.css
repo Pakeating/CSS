@@ -1,0 +1,17 @@
+.padre{
+    width: 200px;
+    height: 200px;
+    background: #F13929;
+    position:relative;
+    left:200px;
+}
+/* 
+absolute posiciona respecto al padre absoluto, es decir, body
+relative, lo hace respecto al padre inmediatamente exterior, es decir, padre */ 
+.hijo{
+    width: 50px;
+    height: 50px;
+    background:#7888EA;
+    position:absolute;
+    left:200px;
+}
