@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+/* para copiar colores se puede usar el programa just color picker */
+header{
+    min-height: 70px;
+    display: flex;
+    background-color: #14161A;
+    justify-content: space-between;
+    /* separa por bloques, tenemos solo dos  */
+    align-items: center;
+    /* nos centra en altura */
+    padding:20px;
+    /* al aplicar padding nos aplica un relleno que nos esta empujando los elementos hacia dentro. si usaramos margin, nos estaria quitando el relleno */
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.icono-github{
+    font-size: 50px;
+    /* uso font-size en lugar de height porque los iconos de bootstrap se basan en fuentes y deben modificarse como tal  */
+    margin-right: 10px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    /* hover representa que el raton esta sobre el elemento */
+    color:yellow;
+}
+/* cuando el tamano de la ventana sea menor de 400px se aplicara lo siguiente */
+@media (max-width:400px) {
+    header{
+        flex-direction: column;
+        /* nos organizara los bloques por columnas  */
+    }
+    nav{
+        padding:15px 0px;
+        /* esto nos anade padding arriba y abajo de 10 px y lateral de 0 */
+    }
+}
