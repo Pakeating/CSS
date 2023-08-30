@@ -1,0 +1,37 @@
+body{
+    font-family: sans-serif;
+    background-color: aquamarine;
+
+}
+.imagenes-container{
+    margin: 100px auto;
+    width:500px;
+    display:flex;
+
+}
+.imagen{
+    position:relative;
+    margin-right: -30px;
+    display: inline-flex;
+    flex-direction:column;
+
+}
+.imagen img{
+    width:80px;
+    height:80px;
+}
+.imagenes-container .nombre{
+    position:absolute;
+    background-color: black;
+    border-radius: 5px;
+    color:white;
+    display:none;
+    min-width: 100px;
+    width: 150px;
+    top:-55px;
+    left: calc(-50%-30px);
+    padding:10px 15px;
+}
+.imagenes-container .imagen:hover .nombre{
+    display:inline;
+}
